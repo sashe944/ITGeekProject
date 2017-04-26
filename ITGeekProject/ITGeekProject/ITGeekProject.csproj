@@ -194,9 +194,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704262254451_InitializeLocalDB.cs" />
-    <Compile Include="Migrations\201704262254451_InitializeLocalDB.Designer.cs">
-      <DependentUpon>201704262254451_InitializeLocalDB.cs</DependentUpon>
+    <Compile Include="Migrations\201704262346575_AddedYactoServer.cs" />
+    <Compile Include="Migrations\201704262346575_AddedYactoServer.Designer.cs">
+      <DependentUpon>201704262346575_AddedYactoServer.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -282,8 +282,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704262254451_InitializeLocalDB.resx">
-      <DependentUpon>201704262254451_InitializeLocalDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704262346575_AddedYactoServer.resx">
+      <DependentUpon>201704262346575_AddedYactoServer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
