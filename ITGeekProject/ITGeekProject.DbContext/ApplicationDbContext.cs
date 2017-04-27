@@ -7,8 +7,8 @@ namespace ITGeekProject.DbContext
     {
         public ApplicationDbContext()
 
-            : base("ITGeek-DevConnection", throwIfV1Schema: false)
-        //: base("ITGeekConnection", throwIfV1Schema: false)
+            //: base("ITGeek-DevConnection", throwIfV1Schema: false)
+         : base("ITGeekConnection", throwIfV1Schema: false)
         {
         }
 
