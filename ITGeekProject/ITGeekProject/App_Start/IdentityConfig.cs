@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ITGeekProject.Models;
+using ITGeekProject.Entities;
+using ITGeekProject.DbContext;
 
 namespace ITGeekProject
 {

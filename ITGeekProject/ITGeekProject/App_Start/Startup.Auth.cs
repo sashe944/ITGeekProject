@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using ITGeekProject.Models;
+using ITGeekProject.Entities;
+using ITGeekProject.DbContext;
 
 namespace ITGeekProject
 {
