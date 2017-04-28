@@ -8,7 +8,7 @@ namespace ITGeekProject.Models
 {
     public class RegisterViewModel
     {
-	 [Required]
+	    [Required]
         [Display(Name = "Username")]
         public string Username { get; set; }
 

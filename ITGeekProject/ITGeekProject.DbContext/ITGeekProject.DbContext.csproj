@@ -68,6 +68,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ITGeekProject.Common\ITGeekProject.Common.csproj">
+      <Project>{D74A8291-B750-452D-BFF7-F6CD04A14E2B}</Project>
+      <Name>ITGeekProject.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ITGeekProject.Entities\ITGeekProject.Entities.csproj">
       <Project>{0263FC3D-CD7C-46BC-8BE0-C7CD69778BF0}</Project>
       <Name>ITGeekProject.Entities</Name>

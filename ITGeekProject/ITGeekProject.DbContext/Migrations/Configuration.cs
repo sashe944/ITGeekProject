@@ -15,8 +15,14 @@ namespace ITGeekProject.DbContext.Migrations
 
         protected override void Seed(ApplicationDbContext context)
         {
-            Initializer.SeedRoles(context);
-           // Initializer.SeedUser(context);
+            if (!context.Roles.Any())
+            {
+                Initializer.SeedRoles(context);
+            }
+            if (!context.Users.Any())
+            {
+                Initializer.SeedUser(context);
+            }
         }
     }
 }

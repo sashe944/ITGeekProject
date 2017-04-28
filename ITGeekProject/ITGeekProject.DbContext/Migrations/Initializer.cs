@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using ITGeekProject.Common;
+using ITGeekProject.Entities;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Linq;
@@ -31,9 +33,26 @@ namespace ITGeekProject.DbContext.Migrations
             }
         }
 
-        //internal static void SeedUser(ApplicationDbContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        internal static void SeedUser(ApplicationDbContext context)
+        {
+            string userName = "TOM & JERRY";
+            string role = "Owner";
+            var userRole = new IdentityRole { Id = new CustomId().ToString(), Name = role };
+            context.Roles.Add(userRole);
+
+            var hasher = new PasswordHasher();
+
+            var user = new User
+            {
+                UserName = userName,
+                PasswordHash = hasher.HashPassword("1"),
+                Email = "tomAndJerry@abv.bg",
+                EmailConfirmed = true,
+                SecurityStamp = new CustomId().ToString()
+            };
+
+            user.Roles.Add(new IdentityUserRole { RoleId = userRole.Id, UserId = user.Id });
+            context.Users.Add(user);
+        }
     }
 }
